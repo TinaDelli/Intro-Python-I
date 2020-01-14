@@ -44,6 +44,11 @@ waypoints[0].update({"lon" : -130, "name": "not a real place"})
 print(waypoints)
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
-# vals = [val['lat' 'lon' 'name'] for val in waypoints]
+# vallat = [val['lat'] for val in waypoints]
+# vallong = [val['lon'] for val in waypoints]
+# valname = [val['name'] for val in waypoints]
     
-print(waypoints)
+# print(vallat, vallong, valname)
+#solution
+for el in waypoints:
+    print(el.values())

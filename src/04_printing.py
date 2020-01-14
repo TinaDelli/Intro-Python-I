@@ -12,6 +12,7 @@ z = "I like turtles!"
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
 print("printf operator way: " + 'x is %(x)d, y is %(y).2f, z is "%(z)s"' % {"x" : x, "y" : round(y, 2), "z" : z})
+#can also do print('x is %d, y is %.2f, z is "%s"' % (x, y, z)) mind blown!
 
 # Use the 'format' string method to print the same thing
 print("format string method: " + 'x is {x}, y is {y}, z is "{z}"'.format(x = x, y=round(y, 2), z=z))
