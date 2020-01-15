@@ -35,10 +35,10 @@ curr_year = curr_date.year
 def calen_program(arg1= curr_year, arg2= curr_month):
   print(calendar.month(arg1, arg2))
 
-if len(sys.argv)-1 == 0:
+if len(sys.argv)-1 == 0:  #if no arguments
   calen_program()
-elif len(sys.argv)-1 == 1:
+elif len(sys.argv)-1 == 1: #if one argument
   calen_program((curr_year), int(sys.argv[1]))
-else:  
+else:  #if both arguments
   calen_program(int(sys.argv[2]), int(sys.argv[1]))
 
