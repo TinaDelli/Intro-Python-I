@@ -22,3 +22,23 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+curr_date = datetime.now()
+curr_month = curr_date.month
+curr_year = curr_date.year
+
+# for args in sys.argv:
+#   print(sys.argv)
+# print(curr_date.month, curr_date.year)
+# print(calendar.month(curr_year, curr_month))
+
+def calen_program(arg1= curr_year, arg2= curr_month):
+  print(calendar.month(arg1, arg2))
+
+if len(sys.argv)-1 == 0:  #if no arguments
+  calen_program()
+elif len(sys.argv)-1 == 1: #if one argument
+  calen_program((curr_year), int(sys.argv[1]))
+else:  #if both arguments
+  calen_program(int(sys.argv[2]), int(sys.argv[1]))
+
